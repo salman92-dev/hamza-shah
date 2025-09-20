@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cinematic Dark Theme */
+    --background: 220 26% 3%;
+    --foreground: 210 40% 95%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 40% 95%;
+
+    /* Neon Cyan Primary */
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 26% 3%;
+
+    /* Subtle Secondary */
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    /* Purple Accent */
+    --accent: 270 100% 75%;
+    --accent-foreground: 220 26% 3%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Cinematic Colors */
+    --neon-cyan: 180 100% 50%;
+    --neon-purple: 270 100% 75%;
+    --neon-pink: 320 100% 70%;
+    --dark-surface: 220 20% 8%;
+    --darker-surface: 220 26% 5%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 26% 3%), hsl(220 20% 8%));
+    --gradient-neon: linear-gradient(45deg, hsl(180 100% 50%), hsl(270 100% 75%));
+    --gradient-card: linear-gradient(145deg, hsl(220 20% 8%), hsl(220 15% 12%));
+    
+    /* Shadows */
+    --shadow-neon: 0 0 20px hsl(180 100% 50% / 0.3);
+    --shadow-neon-hover: 0 0 30px hsl(180 100% 50% / 0.5);
+    --shadow-card: 0 10px 30px -10px hsl(220 26% 3% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .hero-button {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground;
+    @apply hover:shadow-[0_0_20px_hsl(var(--primary)/0.5)] hover:scale-105;
+  }
+  
+  .hero-button-secondary {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    @apply border border-primary text-primary bg-transparent;
+    @apply hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)];
+  }
+
+  .neon-text {
+    @apply text-transparent bg-clip-text;
+    background-image: var(--gradient-neon);
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+
+  .glass-card {
+    @apply bg-card/50 backdrop-blur-sm border border-border/50;
+    @apply shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-16 md:py-24;
+  }
+}
