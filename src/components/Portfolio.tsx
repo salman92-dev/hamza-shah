@@ -143,10 +143,50 @@ const portfolioItems = [
     duration: '1:07',
     thumbnail: '/thumbnail-14.jpg',
     videoUrl: 'video-14.mp4'
+  },
+  {
+    id: 15,
+    title: 'Product Launch Video',
+    category: 'Doctors talking head',
+    description: 'Sleek product showcase with macro photography and motion design.',
+    tools: ['Premiere Pro', 'After Effects', 'Element 3D'],
+    duration: '0:28',
+    thumbnail: '/thumbnail-15.jpg',
+    videoUrl: 'video-15.mp4'
+  },
+  {
+    id: 16,
+    title: 'Product Launch Video',
+    category: 'Doctors talking head',
+    description: 'Sleek product showcase with macro photography and motion design.',
+    tools: ['Premiere Pro', 'After Effects', 'Element 3D'],
+    duration: '1:07',
+    thumbnail: '/thumbnail-16.jpg',
+    videoUrl: 'video-16.mp4'
+  },
+  {
+    id: 17,
+    title: 'Product Launch Video',
+    category: 'Fitness',
+    description: 'Sleek product showcase with macro photography and motion design.',
+    tools: ['Premiere Pro', 'After Effects', 'Element 3D'],
+    duration: '1:07',
+    thumbnail: '/thumbnail-14.jpg',
+    videoUrl: 'video-17.mp4'
+  },
+  {
+    id: 18,
+    title: 'Product Launch Video',
+    category: 'Fitness',
+    description: 'Sleek product showcase with macro photography and motion design.',
+    tools: ['Premiere Pro', 'After Effects', 'Element 3D'],
+    duration: '1:07',
+    thumbnail: '/thumbnail-18.jpg',
+    videoUrl: 'video-18.mp4'
   }
 ];
 
-const categories = ['All', 'Food Restaurant', 'Car Edits', 'Youtube Documentary'];
+const categories = ['All', 'Food Restaurant', 'Car Edits', 'Youtube Documentary','Doctors talking head','Fitness'];
 
 export const Portfolio = () => {
   const ref = useRef(null);

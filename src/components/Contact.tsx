@@ -54,19 +54,19 @@ export const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hamzashah@videoeditor.com',
-      href: 'mailto:hamzashah@videoeditor.com'
+      value: 'hamzasxah@gmail.com',
+      href: 'mailto:hamzasxah@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+92 3057125405',
+      href: 'tel:+92 3057125405'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Los Angeles, CA',
+      value: 'Faisalabad, Punjab, Pakistan',
       href: '#'
     }
   ];
@@ -75,19 +75,19 @@ export const Contact = () => {
     {
       icon: Youtube,
       label: 'YouTube',
-      href: 'https://youtube.com/@hamzashah',
+      href: 'https://youtube.com/@hamzashahtapeballcricket3841?si=oeWdcDja2YG2iWRW',
       color: 'hover:text-red-500'
     },
     {
       icon: Instagram,
       label: 'Instagram',
-      href: 'https://instagram.com/hamzashah',
+      href: 'https://www.instagram.com/autoreelspk?igsh=MTFhNnRkMmV6ZW9zag==',
       color: 'hover:text-pink-500'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/hamzashah',
+      href: 'https://www.linkedin.com/in/hamza-shah-9600a2296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       color: 'hover:text-blue-500'
     }
   ];
@@ -281,6 +281,7 @@ export const Contact = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="hero-button-secondary flex items-center gap-2"
+                onClick={()=>{window.location.href = "/hamza_shah_resume.pdf"}}
               >
                 <Download className="w-5 h-5" />
                 Download Resume
