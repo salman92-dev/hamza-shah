@@ -30,7 +30,7 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-darker-surface border-t border-border/50">
+    <footer className="bg-darker-surface border-t border-border/50 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -51,15 +51,15 @@ export const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>hamzashah@videoeditor.com</span>
+                  <span>hamzasxah@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+92 3057125405</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="w-5 h-5 text-primary" />
-                  <span>Los Angeles, CA</span>
+                  <span>Faisalabad, Punjab, Pakistan</span>
                 </div>
               </div>
             </motion.div>
@@ -115,7 +115,7 @@ export const Footer = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="flex items-center gap-2 text-muted-foreground"
+              className="flex flex-col md:flex-row items-center gap-2 text-muted-foreground"
             >
               <span>© 2024 Hamza Shah. Made with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" />
@@ -137,7 +137,7 @@ export const Footer = () => {
                 onClick={scrollToTop}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="w-10 h-10 bg-primary/20 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300 group"
+                className="fixed right-6 bottom-6 w-10 h-10 bg-primary/20 hover:bg-primary hover:text-primary-foreground rounded-full flex items-center justify-center transition-all duration-300 group"
               >
                 <ArrowUp className="w-5 h-5 group-hover:animate-bounce" />
               </motion.button>
