@@ -160,7 +160,7 @@ const portfolioItems = [
     category: 'Doctors talking head',
     description: 'Sleek product showcase with macro photography and motion design.',
     tools: ['Premiere Pro', 'After Effects', 'Element 3D'],
-    duration: '1:07',
+    duration: '1:19',
     thumbnail: '/thumbnail-16.jpg',
     videoUrl: 'video-16.mp4'
   },
@@ -170,7 +170,7 @@ const portfolioItems = [
     category: 'Fitness',
     description: 'Sleek product showcase with macro photography and motion design.',
     tools: ['Premiere Pro', 'After Effects', 'Element 3D'],
-    duration: '1:07',
+    duration: '0:21',
     thumbnail: '/thumbnail-14.jpg',
     videoUrl: 'video-17.mp4'
   },
@@ -180,7 +180,7 @@ const portfolioItems = [
     category: 'Fitness',
     description: 'Sleek product showcase with macro photography and motion design.',
     tools: ['Premiere Pro', 'After Effects', 'Element 3D'],
-    duration: '1:07',
+    duration: '0:31',
     thumbnail: '/thumbnail-18.jpg',
     videoUrl: 'video-18.mp4'
   }
