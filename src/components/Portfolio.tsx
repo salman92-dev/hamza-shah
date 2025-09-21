@@ -171,7 +171,7 @@ const portfolioItems = [
     description: 'Sleek product showcase with macro photography and motion design.',
     tools: ['Premiere Pro', 'After Effects', 'Element 3D'],
     duration: '0:21',
-    thumbnail: '/thumbnail-14.jpg',
+    thumbnail: '/thumbnail-17.jpg',
     videoUrl: 'video-17.mp4'
   },
   {
