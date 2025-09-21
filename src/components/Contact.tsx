@@ -75,7 +75,7 @@ export const Contact = () => {
     {
       icon: Youtube,
       label: 'YouTube',
-      href: 'https://youtube.com/@hamzashahtapeballcricket3841?si=oeWdcDja2YG2iWRW',
+      href: 'https://www.youtube.com/@hamzaxshahh',
       color: 'hover:text-red-500'
     },
     {
